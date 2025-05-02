@@ -10,7 +10,7 @@ class GestorCarrera:
     def __init__(self, dim = 5):
         self.__cantidad = 0
         self.__dimension = dim
-        self.__incremento = 1
+        self.__incremento = 3
         self.__listaCarreras = NANPI.empty(self.__dimension, dtype = Carrera)
 
     def agregaCarrera(self, unaCarrera):
