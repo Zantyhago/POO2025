@@ -10,7 +10,7 @@ class GestorFacultad:
     def __init__(self, dim = 5):
         self.__cantidad = 0
         self.__dimension = dim
-        self.__incremento = 1
+        self.__incremento = 3
         self.__listaFacus = NANPI.empty(self.__dimension, dtype = Facultad)
 
     def agregaFacu(self, unaFacu):
