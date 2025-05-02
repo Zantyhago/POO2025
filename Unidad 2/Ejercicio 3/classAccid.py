@@ -9,9 +9,6 @@ class Accidente:
         self.__cantFil = 19
         self.__cantCol = 12
 
-    """def __ge__(self, otro):
-        return self.__accidentes[]"""
-
     def cerea(self):
         for i in range(self.__cantFil):
             fila = []
