@@ -17,12 +17,3 @@ class Facultad:
     
     def getNombreFacu(self):
         return self.__nombreFacu
-    
-    def getDireccion(self):
-        return self.__direccion
-    
-    def getLocalidad(self):
-        return self.__localidad
-    
-    def getTelefono(self):
-        return self.__telefono
