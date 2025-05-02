@@ -20,14 +20,8 @@ class Carrera:
     def getNombreCarrera(self):
         return self.__nombreCarrera
     
-    def getTitulo(self):
-        return self.__titulo
-    
     def getDuracion(self):
         return self.__duracion
-    
-    def getNivel(self):
-        return self.__nivel
         
     def getCodFacuDic(self):
         return self.__codigoFacuDic
