@@ -35,7 +35,7 @@ class GestorCarrera:
     def muestraNombre(self, xnomb, gf):
         i = 0
         NoEncontrado = True
-        while NoEncontrado and i < len(self.__listaCarreras):
+        while NoEncontrado and i < len(self.__cantidad):
             if xnomb.lower() == self.__listaCarreras[i].getNombreCarrera().lower():
                 nombFacu = gf.dadordeNombre(self.__listaCarreras[i].getCodFacuDic())
                 nombCar = self.__listaCarreras[i].getNombreCarrera()    #nombre de la carrera bien escrota
