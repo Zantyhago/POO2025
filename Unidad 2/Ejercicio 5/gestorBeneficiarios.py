@@ -30,7 +30,6 @@ class GestorBeneficiario:
     
     def mustraCantBecas(self, xdni):
         cont = 0
-        #espacio = str(' ')
         NoEncontrado = True
         for bene in self.__listaBenes:
             if bene.getDNI() == xdni:
