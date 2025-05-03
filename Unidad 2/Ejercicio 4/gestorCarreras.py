@@ -21,7 +21,7 @@ class GestorCarrera:
         self.__cantidad += 1
 
     def cargaCarreras(self):
-        archivo = open("C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 2/Ejercicio 4/Carreras.csv")
+        archivo = open("Carreras.csv")    #en mi caso funciona con las contrabarras "/"
         reader = csv.reader(archivo, delimiter = ';')
         bandera = True
         for fila in reader:
