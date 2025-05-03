@@ -10,7 +10,7 @@ class GestorBeca:
         self.__listaBecas.append(unaBeca)
 
     def cargaBeca(self):
-        archivo = open("C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 2/Ejercicio 5/becas.csv")
+        archivo = open("becas.csv")
         reader = seeseve.reader(archivo, delimiter = ';')
         bandera = True
         for fila in reader:
