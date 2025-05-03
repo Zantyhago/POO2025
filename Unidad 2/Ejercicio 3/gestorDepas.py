@@ -10,7 +10,7 @@ class GestorDepartamento:
         self.__departamentos.append(unDepa)
 
     def leeDepartamentos(self):
-        archivo = open('C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 2/Ejercicio 2/Departamentos.csv')
+        archivo = open('Departamentos.csv')
         reader = csv.reader(archivo, delimiter = ';')
         bandera = True
         for fila in reader:
