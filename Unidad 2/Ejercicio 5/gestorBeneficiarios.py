@@ -10,7 +10,7 @@ class GestorBeneficiario:
         self.__listaBenes.append(unBenef)
 
     def cargaBeneficiario(self):
-        archivo = open("C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 2/Ejercicio 5/beneficiarios.csv")
+        archivo = open("beneficiarios.csv")
         reader = seeseve.reader(archivo, delimiter = ';')
         bandera = True
         for fila in reader:
