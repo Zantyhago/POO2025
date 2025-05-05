@@ -10,7 +10,7 @@ class ManejadorPacientes:
         self.__listaPacs.append(unPaciente)
     
     def cargaPacientes(self):
-        archivo = open('C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 2/Ejercicio 6/pacientes.csv')
+        archivo = open('pacientes.csv')
         reader = seeseve.reader(archivo, delimiter = ';')
         bandera = True
         for fila in reader:
