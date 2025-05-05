@@ -21,7 +21,7 @@ class ManejadorAtencioes:
         self.__cantidad += 1
 
     def cargaAtenciones(self):
-        archivo = open('C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 2/Ejercicio 6/atenciones.csv')
+        archivo = open('atenciones.csv')
         reader = seeseve.reader(archivo, delimiter = ';')
         bandera = True
         for fila in reader:
