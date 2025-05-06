@@ -42,13 +42,11 @@ class ManejadorAtencioes:
         print(f"Hubieron {cant} atenciones. Importe total requerido: ${impTotal}")
 
     def incisoB(self, xdni, gp):
-        NoEncontrado = True
         cont = 0
         for i in range(self.__cantidad):
             if self.__listaAtts[i].getDNIat() == xdni:
-                NoEncontrado = False
                 cont += 1
-        if NoEncontrado:
+        if cont == 0:
             print("No se encontró el DNI proveído.")
         else:
             nombre = gp.retornaname(xdni)
