@@ -60,7 +60,7 @@ class GestorEquipo:
     
     def muestratabla(self):
         self.__listaEquipos.sort(reverse=True)    #ni idea no funciona bien el __gt__
-        i = 0
+        i = 1
         print("Listado solicitado:")
         print("Posición Equipo                 Puntos      Goles a Favor       Goles en Contra     Diferencia de goles")
         for equipo in self.__listaEquipos:
