@@ -47,8 +47,7 @@ class GestorEquipo:
     def seteador(self, xid, xpuntos, gl, gv):
         i = 0
         encontrado = False
-        tope = len(self.__listaEquipos)
-        while i < tope and not encontrado:
+        while i < len(self.__listaEquipos) and not encontrado:
             if self.__listaEquipos[i].getID() == xid:
                 encontrado = True
                 self.__listaEquipos[i].setPuntos(xpuntos)
