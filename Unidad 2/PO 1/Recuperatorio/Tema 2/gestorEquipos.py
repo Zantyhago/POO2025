@@ -12,7 +12,7 @@ class GestorEquipo:
         self.__listaEquipos.append(unEquipo)
 
     def leeEquipo(self):
-        archivo = open('C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 2/PO 1/Recuperatorio/equiposLiguilla.csv')
+        archivo = open('equiposLiguilla.csv')
         reader = csv.reader(archivo, delimiter = ';')
         bandera = True
         for fila in reader:
@@ -60,7 +60,7 @@ class GestorEquipo:
                 i += 1
     
     def muestratabla(self):
-        self.__listaEquipos.sort(reverse=True)
+        self.__listaEquipos.sort(reverse=True)    #ni idea no funciona bien el __gt__
         i = 0
         print("Listado solicitado:")
         print("Posición Equipo                 Puntos      Goles a Favor       Goles en Contra     Diferencia de goles")
