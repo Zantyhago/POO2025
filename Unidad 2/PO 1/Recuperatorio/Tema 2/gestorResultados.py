@@ -22,7 +22,7 @@ class GestorResultado:
         self.__cantidad += 1
 
     def leeResultado(self):
-        archivo = open('C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 2/PO 1/Recuperatorio/resultadosLiguilla.csv')
+        archivo = open('resultadosLiguilla.csv')
         reader = csv.reader(archivo, delimiter = ';')
         bandera = True
         for fila in reader:
@@ -32,7 +32,7 @@ class GestorResultado:
                 self.agregaResultado(Resultado(fila[0], fila[1], int(fila[2]), fila[3], int(fila[4])))
         print("Se cargaron los resultados.")
         archivo.close()
-#imprimir los equipos (denominación) con los resultados obtenidos en dicha fecha. Al final del listado el importe recaudado por inscripción de los equipos
+
     def incisoA(self, xfecha, ge):
         subtotal = 0
         for i in range(self.__cantidad):
@@ -43,7 +43,6 @@ class GestorResultado:
                 print(f"{denomLoc} ({self.__listaResultados[i].getGolsLocal()}) - ({self.__listaResultados[i].getGolsVisitante()}) {denomVis}")
         print(f"Total recaudado: {subtotal * 2}")
         
-##Leer el nombre de un equipo, mostrar los resultados de los partidos de local que jugó, indicando el nombre del equipo contrincante y el resultado
     def muestraResults(self, ge, xid, xnom):
         print(f"Lista de resultados localaes para {xnom}")
         for i in range(self.__cantidad):
