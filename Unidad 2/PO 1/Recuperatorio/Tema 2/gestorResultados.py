@@ -54,13 +54,13 @@ class GestorResultado:
         for i in range(self.__cantidad):
             gl = self.__listaResultados[i].getGolsLocal()
             gv = self.__listaResultados[i].getGolsVisitante()
-            if self.__listaResultados[i].getGolsLocal() == self.__listaResultados[i].getGolsVisitante():
+            if gl == gv:
                 puntosLoc = 1
                 puntosVis = 1
-            elif self.__listaResultados[i].getGolsLocal() > self.__listaResultados[i].getGolsVisitante():
+            elif gl > gv:
                 puntosLoc = 3
                 puntosVis = 0
-            elif self.__listaResultados[i].getGolsLocal() < self.__listaResultados[i].getGolsVisitante():
+            elif gl < gv:
                 puntosLoc = 0
                 puntosVis = 3
             ge.seteador(self.__listaResultados[i].getIDlocal(), puntosLoc, gl, gv)
