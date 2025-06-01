@@ -1,6 +1,6 @@
 from gestorHoteles import GestorHoteles
 
-def menu():
+def menu():    #hacer bloque try
     op = int(input('''Menu de opciones:
                1) Agregar una habitación a un hotel.
                2) Reservar una habitación.
@@ -12,7 +12,7 @@ def menu():
                su opción -> '''))
     while op != 0:
         if op == 1:
-            xnombre = input("Ingrtese nombre del hotel: ")
+            xnombre = input("Ingrese nombre del hotel: ")
             gh.Inciso1(xnombre)
         elif op == 2:
             xnom = input("Ingrtese nombre del hotel: ")
