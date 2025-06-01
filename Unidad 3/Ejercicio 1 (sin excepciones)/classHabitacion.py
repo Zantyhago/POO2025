@@ -33,7 +33,7 @@ class Habitacion:
     def getDisponibilidad(self):
         return self.__disponibilidad
     
-    def __lt__(self, otro):
+    def __lt__(self, otro):    # solo para que no quede al final la agregada manualmente
         return self.getNumero() < otro.getNumero()
 
     def __str__(self):
