@@ -12,7 +12,7 @@ class GestorBiblio:
         self.__listaBiblios.append(unaBiblio)
 
     def leeDatos(self):
-        archivo = open('C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 3/Ejercicio 2/Biblioteca.csv', encoding='utf-8')
+        archivo = open('Biblioteca.csv', encoding='utf-8')
         reader = csv.reader(archivo, delimiter = ';')
         i = -1
         for fila in reader:
