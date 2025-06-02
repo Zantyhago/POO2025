@@ -21,9 +21,6 @@ class Biblioteca:
     
     def getTelefono(self):
         return self.__telefono
-    
-    def getListaLibros(self):
-        return self.__listaLibros
 
     def buscaPorTitulo(self, xtitulo):  # hacer bloque try
         i = 0
