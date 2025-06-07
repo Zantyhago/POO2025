@@ -11,7 +11,7 @@ class GestorEmpleados:
         self.__listaEmpleados.append(unEmp)
 
     def leeEmpleados(self):
-        archivo = open('C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 3/Ejercicio 3/empleados.csv', encoding='utf-8')
+        archivo = open('empleados.csv', encoding='utf-8')
         reader = csv.reader(archivo, delimiter = ';')
         bandera = True
         for fila in reader:
