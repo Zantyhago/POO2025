@@ -12,7 +12,7 @@ class GestorHoteles:
         self.__listaHoteles.append(unHotel)
 
     def leeDatos(self):
-        archivo = open('C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 3/Ejercicio 1/Hoteles.csv')
+        archivo = open('Hoteles.csv')
         reader = csv.reader(archivo, delimiter = ';')
         i = -1
         for fila in reader:
