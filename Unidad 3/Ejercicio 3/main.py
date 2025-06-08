@@ -29,10 +29,10 @@ def menu():
                 raise ValueError
         print("Nos vemos 7u7")
     except ValueError:
-        print(f"Opción mal ingresada.")
+        print("Opción mal ingresada.")
         menu()
     except IndexError:
-        print(f"Instancia no encontrada.")
+        print("Instancia no encontrada.")
         menu()
 
 if __name__ == '__main__':
