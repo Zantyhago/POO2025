@@ -11,7 +11,7 @@ class GestorEmpleados:
         self.__listaEmpleados.append(unEmp)
 
     def leeEmpleados(self):
-        archivo = open('C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 3/Ejercicio 3/empleados.csv', encoding='utf-8')
+        archivo = open('empleados.csv', encoding='utf-8')
         reader = csv.reader(archivo, delimiter = ';')
         bandera = True
         for fila in reader:
@@ -34,7 +34,7 @@ class GestorEmpleados:
             raise IndexError
         return self.__listaEmpleados[i]       
     
-    def inciso3(self, gm): #Informar aquellos Empleados que no han sido matriculados en ningún programa de capacitación.
+    def inciso3(self, gm):
         print("Empleado/s que no está/n incripto/s en ningún programa:")
         i = 1
         for empleado in self.__listaEmpleados:
