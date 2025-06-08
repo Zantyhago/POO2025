@@ -28,10 +28,10 @@ def menu():
             if op > 3 or op < 0:
                 raise ValueError
         print("Nos vemos 7u7")
-    except ValueError as e:
+    except ValueError:
         print(f"Opción mal ingresada.")
         menu()
-    except IndexError as e:
+    except IndexError:
         print(f"Instancia no encontrada.")
         menu()
 
