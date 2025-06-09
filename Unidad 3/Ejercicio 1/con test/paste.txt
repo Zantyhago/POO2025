@@ -1,0 +1,85 @@
+Biblioteca Central
+Little Witch Academia
+Yoh Yoshinari
+9788417699458
+Ficcion
+
+Biblioteca Popular
+Little Witch Academia
+Yoh Yoshinari
+9788417699458
+Ficcion
+
+1
+Hotel Paraiso Tropical
+Avenida Costera 1234
+0341698631
+2
+101
+1
+sencilla
+5000
+2
+102
+1
+sencilla
+5000
+2
+201
+2
+doble
+8000
+2
+202
+2
+doble
+8000
+2
+301
+3
+suite
+12000
+2
+303
+3
+suite
+13000
+2
+304
+3
+doble
+7500
+2
+401
+4
+sencilla
+5100
+2
+402
+4
+suite
+13500
+1
+Hotel Central
+Avenidad Ignacio de la Roza 123
+2644200584
+2
+101
+1
+sencilla
+5000
+2
+202
+2
+doble
+8000
+2
+301
+3
+suite
+12000
+2
+402
+4
+suite
+13500
