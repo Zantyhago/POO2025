@@ -4,7 +4,7 @@ class Teclado:
     def test(self, gh):
         op2 = input('''Tipo de clase a ingresar:
                     1: Hotel
-                    2: libro
+                    2: habitacion
                     0: finalizar
                     -> ''')
         while op2 != '0':
