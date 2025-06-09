@@ -1,48 +1,69 @@
+Biblioteca Central
+Little Witch Academia
+Yoh Yoshinari
+9788417699458
+Ficcion
+
+Biblioteca Popular
+Little Witch Academia
+Yoh Yoshinari
+9788417699458
+Ficcion
+
 1
 Hotel Paraiso Tropical
 Avenida Costera 1234
 0341698631
 2
+Hotel Paraiso Tropical
 101
 1
 sencilla
 5000
 2
+Hotel Paraiso Tropical
 102
 1
 sencilla
 5000
 2
+Hotel Paraiso Tropical
 201
 2
 doble
 8000
 2
+Hotel Paraiso Tropical
 202
 2
 doble
 8000
 2
+Hotel Paraiso Tropical
 301
 3
 suite
 12000
 2
+Hotel Paraiso Tropical
 303
 3
 suite
 13000
 2
+Hotel Paraiso Tropical
 304
 3
 doble
 7500
 2
+Hotel Paraiso Tropical
 401
 4
 sencilla
 5100
 2
+Hotel Paraiso Tropical
 402
 4
 suite
@@ -52,21 +73,25 @@ Hotel Central
 Avenidad Ignacio de la Roza 123
 2644200584
 2
+Hotel Central
 101
 1
 sencilla
 5000
 2
+Hotel Central
 202
 2
 doble
 8000
 2
+Hotel Central
 301
 3
 suite
 12000
 2
+Hotel Central
 402
 4
 suite

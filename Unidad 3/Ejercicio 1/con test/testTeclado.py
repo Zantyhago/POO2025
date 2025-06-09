@@ -1,10 +1,9 @@
 from classHotel import Hotel
-
 class Teclado:
     def test(self, gh):
         op2 = input('''Tipo de clase a ingresar:
                     1: Hotel
-                    2: habitacion
+                    2: libro
                     0: finalizar
                     -> ''')
         while op2 != '0':
@@ -22,6 +21,6 @@ class Teclado:
                 gh.agregaHab(xnombreB, xnum, xpiso, xtipo, xprec, True)
             op2 = input('''Tipo de clase a ingresar:
                     1: Hotel
-                    2: habitacion
+                    2: libro
                     0: finalizar
                     -> ''')

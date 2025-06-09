@@ -52,9 +52,6 @@ if __name__ == '__main__':
     gh = GestorHoteles()
     test1 = Teclado()
     test2 = Tester()
-    op3 = input("1 (test por teclado) - 2 (test predefinido): ")
-    if op3 == 1:
-        test1.test(gh)
-    elif op3 == 2:
-        test2.testeador(gh)
+    test1.test(gh)
+    test2.testeador(gh)
     menu()

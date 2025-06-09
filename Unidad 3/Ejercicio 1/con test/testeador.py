@@ -1,7 +1,7 @@
 from classHotel import Hotel
 class Tester:
     def testeador(self, gh):
-        h1 = Hotel('Hotel Paraiso Tropical', 'Avenida Costera 1234', '0341698631')
+        h1 = Hotel('Hotel Paraiso Tropical','Avenida Costera 1234','0341698631')
         gh.agregaHotel(h1)
         xnombreB = 'Hotel Paraiso Tropical'
         xnum = 101
@@ -58,6 +58,7 @@ class Tester:
         xprec = 13500
         gh.agregaHab(xnombreB, xnum, xpiso, xtipo, xprec, True)
         h2 = Hotel('Hotel Central', 'Avenidad Ignacio de la Roza 123', '2644200584')
+        gh.agregaHotel(h2)
         xnombreB = 'Hotel Central'
         xnum = 101
         xpiso = 1
