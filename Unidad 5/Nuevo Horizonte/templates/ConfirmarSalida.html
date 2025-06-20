@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Confirmar salida{% endblock %}
+
+{% block content %}
+    <form method = "POST" action = "/ConfirmarSalida">
+        <h3>¿La dependencia fue {{ depe }}?</h3>        
+        <label><input type = "radio" name = "respuesta" value = "si"> Sí</label><br>
+        <label><input type = "radio" name = "respuesta" value = "no"> No</label><br><br>
+        <button type = "submit">Confirmar</button>
+    </form>
+{% endblock %}
