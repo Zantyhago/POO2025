@@ -22,7 +22,7 @@ class GestorInscriptos:
         self.__cantidad += 1
     
     def leeIncriptos(self):
-        archivo = open('C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 2/PO 1/Extraordinario/inscripciones.csv', encoding = 'utf-8')
+        archivo = open('inscripciones.csv', encoding = 'utf-8')
         reader = csv.reader(archivo, delimiter = ';')
         next(reader)
         for fila in reader:
