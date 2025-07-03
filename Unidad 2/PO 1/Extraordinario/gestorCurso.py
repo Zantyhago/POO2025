@@ -10,7 +10,7 @@ class GestorCurso:
         self.__listaCursos.append(unCurso)
         
     def leeCursos(self):
-        archivo = open('C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 2/PO 1/Extraordinario/cursos.csv', encoding = 'utf-8')
+        archivo = open('cursos.csv', encoding = 'utf-8')
         reader = csv.reader(archivo, delimiter = ';')
         next(reader)
         for fila in reader:
