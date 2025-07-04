@@ -70,7 +70,6 @@ class GestorEquipo:
         i = 1
         print("Listado solicitado:")
         print(f"{'Posición':<10}{'Equipo':<26}{'Puntos':<6}   {'Goles a Favor':<13}   {'Goles en Contra':<15}   {'Diferencia de goles':<19}")
-                                            #{self.getPuntos():^6}   {self.getGolesAFavor():^13}   {self.getGolesContra():^15}   {self.getDiferencia():^19}
         for equipo in self.__listaEquipos:
             print(f"{i}.       {equipo}")
             i+=1
