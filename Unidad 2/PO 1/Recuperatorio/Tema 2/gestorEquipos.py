@@ -12,7 +12,7 @@ class GestorEquipo:
         self.__listaEquipos.append(unEquipo)
 
     def leeEquipo(self):
-        archivo = open('equiposLiguilla.csv')
+        archivo = open('C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 2/PO 1/Recuperatorio/Tema 2/equiposLiguilla.csv')
         reader = csv.reader(archivo, delimiter = ';')
         bandera = True
         for fila in reader:
@@ -44,13 +44,13 @@ class GestorEquipo:
             else:
                 i += 1
 
-    def seteador(self, xid, xpuntos, gl, gv):
+    def seteador(self, xid, pts, gl, gv):
         i = 0
         encontrado = False
         while i < len(self.__listaEquipos) and not encontrado:
             if self.__listaEquipos[i].getID() == xid:
                 encontrado = True
-                self.__listaEquipos[i].setPuntos(xpuntos)
+                self.__listaEquipos[i].setPuntos(pts)
                 self.__listaEquipos[i].setgetGolesAFavor(gl)
                 self.__listaEquipos[i].setgetGolesContra(gv)
                 diferencia = gl - gv
@@ -58,11 +58,19 @@ class GestorEquipo:
             else:
                 i += 1
     
+    def cereador(self): #reestablece los valores porque cada vez que muestra la tabla se van sumando los mismos
+        for equipo in self.__listaEquipos:
+                equipo.setPuntos(-1)
+                equipo.setgetGolesAFavor(-1)
+                equipo.setgetGolesContra(-1)
+                equipo.setDiferencia(-1)
+    
     def muestratabla(self):
-        self.__listaEquipos.sort(reverse=True)    #ni idea no funciona bien el __gt__
+        self.__listaEquipos.sort(reverse=True)
         i = 1
         print("Listado solicitado:")
-        print("Posición Equipo                 Puntos      Goles a Favor       Goles en Contra     Diferencia de goles")
+        print(f"{'Posición':<10}{'Equipo':<26}{'Puntos':<6}   {'Goles a Favor':<13}   {'Goles en Contra':<15}   {'Diferencia de goles':<19}")
+                                            #{self.getPuntos():^6}   {self.getGolesAFavor():^13}   {self.getGolesContra():^15}   {self.getDiferencia():^19}
         for equipo in self.__listaEquipos:
             print(f"{i}.       {equipo}")
             i+=1

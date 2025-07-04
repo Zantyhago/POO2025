@@ -17,12 +17,15 @@ def menu():
             ge.incisoB(gr, xnombre)
         elif op == 'c':
             gr.incisoC(ge)
+            ge.cereador()
         else:
             print("ERROR. intente nuevamente.")
         menu()
+    
 if __name__ == '__main__':
     ge = GestorEquipo()
     gr = GestorResultado()
     ge.leeEquipo()
     gr.leeResultado()
     menu()
+    print("Gracias por contar conmigo.")

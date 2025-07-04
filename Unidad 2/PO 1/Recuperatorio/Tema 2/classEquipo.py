@@ -26,31 +26,44 @@ class Equipo:
         return self.__presidente
     
     def setPuntos(self, xpuntos):
-        self.__puntos += xpuntos
-
+        if xpuntos != -1:
+            self.__puntos += xpuntos
+        else:
+            self.__puntos = 0
     def getPuntos(self):
         return self.__puntos
     
     def setgetGolesAFavor(self, goles):
-        self.__golesAfavor += goles
-
+        if goles != -1:
+            self.__golesAfavor += goles
+        else:
+            self.__golesAfavor = 0
     def getGolesAFavor(self):
         return self.__golesAfavor
     
     def setgetGolesContra(self, goles):
-        self.__golesEncontra += goles
-
+        if goles != -1:
+            self.__golesEncontra += goles
+        else:
+            self.__golesEncontra = 0
     def getGolesContra(self):
         return self.__golesEncontra
     
     def setDiferencia(self, dif):
-        self.__diferenciaGoles += dif
-
+        if dif != -1:
+            self.__diferenciaGoles += dif
+        else:
+            self.__diferenciaGoles = 0
     def getDiferencia(self):
         return self.__diferenciaGoles
     
     def __gt__(self, otro):
-        return self.getPuntos() > otro.getPuntos()
+        retorno = None
+        if self.getPuntos() != otro.getPuntos():
+            retorno = self.getPuntos() > otro.getPuntos()
+        else:
+            retorno = self.getDiferencia() > otro.getDiferencia()
+        return retorno
     
     def __str__(self):
-        return f"{self.getDenominacion()}              {self.getPuntos()}   {self.getGolesAFavor()}   {self.getGolesContra()}   {self.getDiferencia()}"
+        return f"{'':<1}{self.getDenominacion():<26}{self.getPuntos():^6}   {self.getGolesAFavor():^13}   {self.getGolesContra():^15}   {self.getDiferencia():^19}"
