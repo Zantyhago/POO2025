@@ -49,12 +49,10 @@ class Equipo:
     def getGolesContra(self):
         return self.__golesEncontra
     
-    def setDiferencia(self, dif):
-        if dif != -1:
-            self.__diferenciaGoles += dif
-        else:
-            self.__diferenciaGoles = 0
+    def setDiferencia(self):
+        self.__diferenciaGoles = 0
     def getDiferencia(self):
+        self.__diferenciaGoles = self.__golesAfavor - self.__golesEncontra
         return self.__diferenciaGoles
     
     def __gt__(self, otro):

@@ -12,7 +12,7 @@ class GestorEquipo:
         self.__listaEquipos.append(unEquipo)
 
     def leeEquipo(self):
-        archivo = open('equiposLiguilla.csv')
+        archivo = open('C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 2/PO 1/Recuperatorio/Tema 2/equiposLiguilla.csv')
         reader = csv.reader(archivo, delimiter = ';')
         bandera = True
         for fila in reader:
@@ -53,8 +53,6 @@ class GestorEquipo:
                 self.__listaEquipos[i].setPuntos(pts)
                 self.__listaEquipos[i].setgetGolesAFavor(gl)
                 self.__listaEquipos[i].setgetGolesContra(gv)
-                diferencia = gl - gv
-                self.__listaEquipos[i].setDiferencia(diferencia)
             else:
                 i += 1
     
@@ -63,7 +61,7 @@ class GestorEquipo:
                 equipo.setPuntos(-1)
                 equipo.setgetGolesAFavor(-1)
                 equipo.setgetGolesContra(-1)
-                equipo.setDiferencia(-1)
+                equipo.setDiferencia()
     
     def muestratabla(self):
         self.__listaEquipos.sort(reverse=True)
