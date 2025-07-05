@@ -12,7 +12,7 @@ class GestorEquipo:
         self.__listaEquipos.append(unEquipo)
 
     def leeEquipo(self):
-        archivo = open('C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 2/PO 1/Recuperatorio/Tema 2/equiposLiguilla.csv')
+        archivo = open('equiposLiguilla.csv')
         reader = csv.reader(archivo, delimiter = ';')
         bandera = True
         for fila in reader:
