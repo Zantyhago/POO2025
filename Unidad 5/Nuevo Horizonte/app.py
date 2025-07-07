@@ -92,16 +92,5 @@ def ConsultarRegistro():
             return render_template ('aviso.html', mensaje = f'{worker.apellido} {worker.nombre} no posee el DNI ingresado.')
     return render_template('/ConsultarRegistro.html')
 
-'''@app.route('/ConfirmarSalida', methods = ['GET', 'POST'])
-def ConfirmaSalida():
-    if request.method == 'POST':
-        xrespuesta = request.form['respuesta']
-        if xrespuesta == 'no':
-            return render_template ('aviso.html', mensaje = 'Intente registrar su salida nuevamente :c')
-        elif xrespuesta == 'si':
-            db.session.commit() #de estar mal re contra remil corregir
-            return render_template ('aviso.html', mensaje = f'Registro de salida exitoso para {worker.apellido} {worker.nombre} las {xhora}.')
-    return render_template('RegistraSalida.html')'''
-
 if __name__ == '__main__':
     app.run(debug = True)
