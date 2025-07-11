@@ -23,7 +23,7 @@ def menu(op = -1):
                 gp.inciso4()
             else:
                 if op == 0:
-                    break #se queda en bucle wtf no me voy a complicar por un menú
+                    break #se queda en bucle por lo que salta el raise no me voy a complicar por un menú xd
                 raise IndexError
         print("como me gusra el python")
     except IndexError as a:
