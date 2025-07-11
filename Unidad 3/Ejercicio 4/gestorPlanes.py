@@ -60,7 +60,6 @@ class GestorPlanes:
         if ninguna:
             raise IndexError
         
-    
     def inciso4(self):
         print(f"{'Tipo de Plan:':<15}{'Compañia:':<19}{'Duración:':<11}{'Cobertura:':<27}{'Precio final:'}")
         for plan in self.__listaPlanes:
