@@ -6,7 +6,7 @@ def menu(op = -1):
             op = int(input('''MENÚ DE OPCIONES
                 1) Mostrar que tipo de plan se encuntra en una determinada posición.
                 2) Cantidad de planes con una cobertura indicada.
-                3) Indicar que compañias poseen mas o igual cantidad de canales internacionales indicados.
+                3) Indicar que compañias que poseen mayor o igual cantidad de canales internacionales indicados.
                 4) Mostrar info de todos los planes.
                 0) Salir.
                 Ingrese su opción -> '''))
@@ -22,9 +22,8 @@ def menu(op = -1):
             elif op == 4:
                 gp.inciso4()
             else:
-                if op == 0:
-                    break #se queda en bucle por lo que salta el raise no me voy a complicar por un menú xd
-                raise IndexError
+                if op != 0: # por si está mal la opcion y no quiere salir aún
+                    raise IndexError
         print("como me gusra el python")
     except IndexError as a:
         print(f"Dato ingresado fuera de rango. {a}")
