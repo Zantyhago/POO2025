@@ -6,7 +6,7 @@ def menu(op = -1):
             op = int(input('''MENÚ DE OPCIONES
                 1) Mostrar que tipo de plan se encuntra en una determinada posición.
                 2) Cantidad de planes con una cobertura indicada.
-                3) Indicar que compañias que poseen mayor o igual cantidad de canales internacionales indicados.
+                3) Indicar que compañias poseen mayor o igual cantidad de canales internacionales indicados.
                 4) Mostrar info de todos los planes.
                 0) Salir.
                 Ingrese su opción -> '''))
