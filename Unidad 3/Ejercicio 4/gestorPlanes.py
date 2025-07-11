@@ -52,12 +52,12 @@ class GestorPlanes:
         print(f"Con {cantM} de Telefonía y {cantT} de Televisión.")
 
     def inciso3(self, xcant):
-        cero = True
+        ninguna = True
         for plan in self.__listaPlanes:
             if isinstance(plan, Television) and plan.getCanInt() >= xcant:
                 print(f"{plan.getCompañia()} ofrece {plan.getCanInt()} canales.")
-                cero = False
-        if cero:
+                ninguna = False
+        if ninguna:
             raise IndexError
         
     
