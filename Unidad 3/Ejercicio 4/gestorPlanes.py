@@ -12,7 +12,7 @@ class GestorPlanes:
         self.__listaPlanes.append(planero)
 
     def leePlanes(self):
-        archivo = open('planes.csv', encoding = 'utf-8')
+        archivo = open('C:/Users/Vaf_Tecnology/Desktop/Santy/Programación Orientada a Objetos/Unidad 3/Ejercicio 4/planes.csv', encoding = 'utf-8')
         reader = csv.reader(archivo, delimiter = ';')    
         next(reader)
         for fila in reader:
@@ -38,7 +38,6 @@ class GestorPlanes:
                 j += 1
         if not encontrado:
             raise IndexError
-        return
 
     def inciso2(self, xcob):
         cantM = 0
