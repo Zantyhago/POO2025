@@ -22,6 +22,8 @@ def menu(op = -1):
             elif op == 4:
                 gp.inciso4()
             else:
+                if op == 0:
+                    break #se queda en bucle wtf no me voy a complicar por un menú
                 raise IndexError
         print("como me gusra el python")
     except IndexError as a:
