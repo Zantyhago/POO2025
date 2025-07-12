@@ -12,6 +12,8 @@ def menu(op = -1):
                 Ingrese su opción -> '''))
             if op == 1:
                 xi = int(input("Ingrese posicion (0<): "))
+                if xi < 1:
+                    raise IndexError
                 gp.inciso1(xi)
             elif op == 2:
                 xcob = input("Ingrese cobertura: ")
