@@ -24,20 +24,11 @@ class GestorPlanes:
         print("Se cargaron los planes.")
 
     def inciso1(self, xi):
-        j = 0
-        encontrado = False
-        while j < len(self.__listaPlanes) and not encontrado:
-            if j == xi-1:
-                encontrado = True
-                plan = self.__listaPlanes[j]
-                if isinstance(plan, Telefonia):
-                    print(f"La componente en la posición {xi} es de tipo Telefonía.")
-                elif isinstance(plan, Television):
-                    print(f"La componente en la posición {xi} es de tipo Televisión.")
-            else:
-                j += 1
-        if not encontrado:
-            raise IndexError
+        plan = self.__listaPlanes[xi-1]
+        if isinstance(plan, Telefonia):
+            print(f"La componente en la posición {xi} es de tipo Telefonía.")
+        elif isinstance(plan, Television):
+            print(f"La componente en la posición {xi} es de tipo Televisión.")
 
     def inciso2(self, xcob):
         cantM = 0
