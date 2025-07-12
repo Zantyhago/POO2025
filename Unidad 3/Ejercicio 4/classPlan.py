@@ -33,3 +33,4 @@ class Plan:
 
     def __str__(self):
         return f"{self.getTipo():<15}{self.getCompañia():<19}{self.getDuracion():<11}{self.getCobertura():<27}{self.getPrecio():.2f}"
+        # en vez de hacer getTipo(), se podría un type(self) directamente. No avivo mas
