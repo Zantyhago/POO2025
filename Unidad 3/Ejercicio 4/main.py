@@ -12,7 +12,7 @@ def menu(op = -1):
                 Ingrese su opción -> '''))
             if op == 1:
                 xi = int(input("Ingrese posicion (0<): "))
-                if xi < 1:
+                if xi < 1: # porque sino accede a las últimas posiciones
                     raise IndexError
                 gp.inciso1(xi)
             elif op == 2:
