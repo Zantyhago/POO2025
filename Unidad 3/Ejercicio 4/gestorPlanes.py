@@ -37,7 +37,7 @@ class GestorPlanes:
             if plan.getCobertura().lower() == xcob.lower():
                 if isinstance(plan, Telefonia):
                     cantM += 1
-                if isinstance(plan, Television):
+                elif isinstance(plan, Television):
                     cantT += 1
         print(f"Hay un total de {cantM + cantT} plan/es con la cobertura {xcob}.")
         print(f"Con {cantM} de Telefonía y {cantT} de Televisión.")
