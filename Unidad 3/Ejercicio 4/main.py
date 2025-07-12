@@ -11,7 +11,7 @@ def menu(op = -1):
                 0) Salir.
                 Ingrese su opción -> '''))
             if op == 1:
-                xi = int(input("Ingrese posicion (<0): "))
+                xi = int(input("Ingrese posicion (0<): "))
                 gp.inciso1(xi)
             elif op == 2:
                 xcob = input("Ingrese cobertura: ")
