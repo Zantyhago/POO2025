@@ -1,5 +1,5 @@
 import abc
-class Plan:
+class Plan(abc.ABC):
     __compania: str
     __duracion: int
     __cobertura: str
