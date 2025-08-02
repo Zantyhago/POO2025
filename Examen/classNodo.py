@@ -1,8 +1,8 @@
 from classVehiculo import Vehiculo
 
 class Nodo:
-    __dato: object
-    __siguiente: object
+    __dato: Vehiculo
+    __siguiente: Vehiculo
     
     def __init__(self, dato):
         self.__dato = dato
