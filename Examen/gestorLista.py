@@ -113,9 +113,7 @@ class GestorLista:
             vehiculo = self.agregaVehiculoManual()
             nodo = Nodo(vehiculo)
             if xindice == 0:
-                nodo.setSiguiente(self.__comienzo)
-                self.__comienzo = nodo
-                self.__actual = self.__comienzo
+                self.agregaVehiculo(vehiculo)
             else:
                 aux = self.__comienzo
                 for i in range(xindice-1):
