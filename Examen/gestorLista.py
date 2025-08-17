@@ -120,4 +120,4 @@ class GestorLista:
                     aux = aux.getSiguiente()
                 nodo.setSiguiente(aux.getSiguiente())
                 aux.setSiguiente(nodo)
-            self.__tope += 1
+                self.__tope += 1
